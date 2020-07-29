@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>SMART FAMILY PROJECT -PARVAIZ</title>
+      <!-- import materlized css -->
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+      <!-- import toggle button librray -->
+      <link
+        href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet"
+      />
+      <!--Import Google Icon Font-->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Import Materializ icons -->
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Import Google Awsome fonts -->
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+      />
+      <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+      <!-- import bootstrap -->
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+      />
+      <!-- link font awsome localy -->
+      <link rel="stylesheet" href="../fontawsome/duotone.min.css" />
+      <link rel="stylesheet" href="../css/test-nav-click-expand.css" />
+      <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <!-- <link rel="stylesheet" href="../fontawsome/fontawesome.css"> -->
+      <link rel="stylesheet" href="../js/timer.js" />
+      <link rel="stylesheet" href="../fontawsome/all.css" />
+      <link rel="stylesheet" href="../css/mystyles.css" />
+      <link rel="stylesheet" href="../css/profile.css" />
+    </head>
+    <body>
+      <!-- Navbar Here  -->
+      <nav
+        class="navbar navbar-expand-sm navbar-dark mb-5 fixed-top navbar-fixed-top main-navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">SMART FAMILY</a>
+          <ul class="navbar-nav right-nav-elements">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                ><i class="fas fa-cog fa-lg pr-2"
+                  ><span
+                    class="text-danger"
+                    style="position: absolute; bottom: 25px; font-size: 2.8rem;"
+                    >.</span
+                  ></i
+                ></a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-user fa-lg"></i
+              ></a>
+              <div class="dropdown-menu">
+                <a href="Profile.html" class="dropdown-item">Profile</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Logout</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sidenav-bars" onclick="bars()"
+                ><i class="fas fa-bars fa-lg pl-3"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="area"></div>
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content border-0 box-color">
+            <div class="modal-header border-0">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Notifications
+              </h5>
+              <button
+                type="button"
+                class="close text-white"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body box-color">
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                role="alert"
+              >
+                <strong>Hello Junaid!</strong> Security SW update available
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!-- 2nd alert -->
+              <div
+                class="alert alert-primary alert-dismissible fade show"
+                role="alert"
+              >
+                <strong>Hello Junaid!</strong> New device recognized
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!-- 3rd alert -->
+              <div
+                class="alert alert-success alert-dismissible fade show"
+                role="alert"
+              >
+                <strong>Hello Junaid!</strong> User profile is not complete
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer box-color border-0">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- side nav -->
+      <nav
+        class="main-menu"
+        style="background-color: rgba(15,156,230,.25); box-shadow: inset 0 0 2rem rgba(15,156,230,.25), inset 0 0 0 1px rgba(15,156,230,.15);
+        z-index: 5;!important;"
+        id="side-navigation"
+      >
+        <ul>
+          <li class="has-subnav">
+            <a class="mar-items" href="home.html">
+              <i class="fas fa-home-heart fa-2x"></i>
+              <span class="nav-text size">
+                Home
+              </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a class="mar-items" href="lights.html">
+              <i
+                class="fal fa-lightbulb fa-2x ml-3 mr-4"
+                style="font-size: 33px;"
+              ></i>
+              <!-- <img src="method-draw-image (2).svg" style="
+      /* font-size: 29px; */
+      height: 37px;
+      margin-left: 18px;
+      padding-right: 100px;
+  "> -->
+              <span class="nav-text size">
+                <!--font-weight-bold-->
+                Lights
+              </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a class="mar-items" href="Camras.html">
+              <i class="fal fa-cctv fa-2x ml-3 mr-3"></i>
+              <span class="nav-text size">
+                Cameras
+              </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a class="mar-items" href="applinces.html">
+              <i class="fas fa-plug fa-2x"></i>
+              <span class="nav-text size">
+                Appliances
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="mar-items" href="#">
+              <i class="fas fa-temperature-high fa-2x ml-1"></i>
+              <span class="nav-text size">
+                Climate
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="main" style="margin-top: 130px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-10 offset-sm-1">
+              <!-- Profile tabs START -->
+              <ul class="nav nav-tabs nav-fill" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-toggle="tab"
+                    href="#personal"
+                    role="tab"
+                    aria-selected="true"
+                    >PERSONAL</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#address"
+                    role="tab"
+                    aria-selected="false"
+                    >ADDRESS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#password"
+                    role="tab"
+                    aria-selected="false"
+                    >PASSWORD</a
+                  >
+                </li>
+              </ul>
+              <div class="info-holder info-ct">
+                <div
+                  data-toggle="popover-all"
+                  data-content="Customized tabbed interface"
+                  data-original-title="Tabs"
+                  data-placement="top"
+                  data-offset="0,48"
+                ></div>
+              </div>
+              <!-- Profile tab panes -->
+              <div class="tab-content px-4 px-sm-0 py-sm-4 mt-4">
+                <!-- Personal pane START -->
+                <div
+                  class="tab-pane fade active show"
+                  id="personal"
+                  role="tabpanel"
+                >
+                  <form>
+                    <div class="form-group row">
+                      <label
+                        for="first-name"
+                        class="col-12 col-sm-3 col-form-label"
+                        >First name</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="text"
+                          value="PARVAIZ"
+                          id="first-name"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label
+                        for="last-name"
+                        class="col-12 col-sm-3 col-form-label"
+                        >Last name</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="text"
+                          value="AHAMAD"
+                          id="last-name"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label
+                        for="user-email"
+                        class="col-12 col-sm-3 col-form-label"
+                        >Email</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="email"
+                          value="aparvaiz89@gmail.com"
+                          id="user-email"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label
+                        for="user-tel"
+                        class="col-12 col-sm-3 col-form-label"
+                        >Phone</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="tel"
+                          value="92-346-8805420"
+                          id="user-tel"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="offset-xs-0 offset-sm-3 col-12 col-sm-9 mt-3">
+                        <button type="submit" class="btn btn-primary">
+                          Save
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Personal pane END -->
+                <!-- Address pane START -->
+                <div class="tab-pane fade" id="address" role="tabpanel">
+                  <form>
+                    <div class="form-group row">
+                      <label for="street" class="col-12 col-sm-3 col-form-label"
+                        >Street</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="text"
+                          value="Street address, P.O. BOX Chak # 20/DNB"
+                          id="street"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="city" class="col-12 col-sm-3 col-form-label"
+                        >City / Town</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="text"
+                          value="Bahawalpur"
+                          id="city"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="city" class="col-12 col-sm-3 col-form-label"
+                        >State / Region</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="text"
+                          value="Punjab"
+                          id="city"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="zip" class="col-12 col-sm-3 col-form-label"
+                        >Zip / Postal</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="text"
+                          value="63100"
+                          id="zip"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label
+                        for="country"
+                        class="col-12 col-sm-3 col-form-label"
+                        >Country</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <select class="form-control custom-focus" id="country">
+                          <option>Pakistan</option>
+                          <option>USA</option>
+                          <option>GREAT BRITAIN</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="offset-xs-0 offset-sm-3 col-12 col-sm-9 mt-3">
+                        <button type="submit" class="btn btn-primary">
+                          Save
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Address pane END -->
+                <!-- Password pane START -->
+                <div class="tab-pane fade" id="password" role="tabpanel">
+                  <form>
+                    <div class="form-group row">
+                      <label
+                        for="user-password"
+                        class="col-12 col-sm-3 col-form-label"
+                        >Password</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus"
+                          type="password"
+                          value="parvaiz"
+                          id="user-password"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row has-success">
+                      <label
+                        for="user-password-confirm"
+                        class="col-12 col-sm-3 col-form-label"
+                        >Confirm password</label
+                      >
+                      <div class="col-12 col-sm-9">
+                        <input
+                          class="form-control custom-focus is-valid"
+                          type="password"
+                          value="professor"
+                          id="user-password-confirm"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="offset-xs-0 offset-sm-3 col-12 col-sm-9 mt-3">
+                        <button type="submit" class="btn btn-primary">
+                          Save password
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Password pane END -->
+              </div>
+              <!-- Profile tabs END -->
+            </div>
+          </div>
+        </div>
+        <!-- Main content overlay when side menu appears  -->
+        <div class="cover-offcanvas" data-toggle="offcanvas"></div>
+      </div>
+      <script>
+        $(function () {
+          $("#chkToggle1").bootstrapToggle();
+        });
+
+        // setInterval(switchhIt, 1000);
+      </script>
+      <!-- materlized js -->
+      <script src="../js/myjs.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+</html>

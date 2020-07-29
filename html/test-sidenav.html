@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<metacharset="UTF-8">
+
+<metaname="viewport"content="width=device-width, initial-scale=1.0">
+
+<metahttp-equiv="X-UA-Compatible"content="ie=edge">
+
+<title>Sidebar</title>
+
+<linkrel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Bootstrap core CSS -->
+
+<linkhref="css/bootstrap.min.css"rel="stylesheet">
+
+<!-- Material Design Bootstrap -->
+
+<linkhref="css/mdb.min.css"rel="stylesheet">
+
+<style>
+
+body{overflow-x: hidden; }
+
+.side-nav{ position: sticky!important; top:0!important; height:100vh;
+
+background:purple; box-shadow:none; padding-top: 3rem;}
+
+/* footer.page-footer{position:sticky; top:0; z-index: 999999; bottom:auto;} */
+
+.navbar.fixed-top{z-index: 999999999;}
+
+.fixed-top{position: sticky !important;}
+
+main{margin-top:-100vh; }
+
+header, main, footer {
+
+padding-left: 240px;
+
+}
+
+@media(max-width:900px)
+
+{.side-nav{ position:fixed !important; margin-bottom: 0; top:0; padding-top:5rem;}
+
+header, main, footer {
+
+padding-left: 0;
+
+}
+
+main{margin-top:0;}
+
+}
+
+@media(min-width: 901px){
+
+.menu-btn{display: none!important;}
+
+}
+
+ 
+
+</style>
+
+ 
+
+ 
+
+</head>
+
+<body>
+
+ 
+
+<nav class="navbar fixed-top black navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+
+<!-- SideNav slide-out button -->
+
+<divclass="float-left">
+
+<ahref="#"data-activates="slide-out"class="button-collapse">
+
+<iclass="fa fa-bars"></i>
+
+</a>
+
+</div>
+
+<!-- Breadcrumb-->
+
+<divclass="breadcrumb-dn mr-auto">
+
+<p>Material Design for Bootstrap</p>
+
+</div>
+
+<ulclass="nav navbar-nav nav-flex-icons ml-auto">
+
+<liclass="nav-item">
+
+<aclass="nav-link waves-effect waves-light">
+
+<iclass="fa fa-envelope"></i>
+
+<spanclass="clearfix d-none d-sm-inline-block">Contact</span>
+
+</a>
+
+</li>
+
+<liclass="nav-item">
+
+<aclass="nav-link waves-effect waves-light">
+
+<iclass="fa fa-comments-o"></i>
+
+<spanclass="clearfix d-none d-sm-inline-block">Support</span>
+
+</a>
+
+</li>
+
+<liclass="nav-item">
+
+<aclass="nav-link waves-effect waves-light">
+
+<iclass="fa fa-user"></i>
+
+<spanclass="clearfix d-none d-sm-inline-block">Account</span>
+
+</a>
+
+</li>
+
+<liclass="nav-item dropdown">
+
+<aclass="nav-link dropdown-toggle waves-effect waves-light"href="#"id="navbarDropdownMenuLink"data-toggle="dropdown"
+
+aria-haspopup="true"aria-expanded="false">
+
+Dropdown
+
+</a>
+
+<divclass="dropdown-menu dropdown-menu-right"aria-labelledby="navbarDropdownMenuLink">
+
+<aclass="dropdown-item waves-effect waves-light"href="#">Action</a>
+
+<aclass="dropdown-item waves-effect waves-light"href="#">Another action</a>
+
+<aclass="dropdown-item waves-effect waves-light"href="#">Something else here</a>
+
+</div>
+
+</li>
+
+</ul>
+
+</nav>
+
+<!-- Sidebar navigation -->
+
+<divid="slide-out"class=" side-nav fixed ">
+
+<ulclass="custom-scrollbar">
+
+<!-- Logo -->
+
+<li>
+
+<divclass="logo-wrapper waves-light">
+
+<ahref="#">
+
+<imgsrc="https://mdbootstrap.com/img/logo/mdb-transparent.png"class="img-fluid flex-center">
+
+</a>
+
+</div>
+
+</li>
+
+<!--/. Logo -->
+
+<!--Social-->
+
+<li>
+
+<ulclass="social">
+
+<li>
+
+<ahref="#"class="icons-sm fb-ic">
+
+<iclass="fa fa-facebook"></i>
+
+</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="icons-sm pin-ic">
+
+<iclass="fa fa-pinterest"></i>
+
+</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="icons-sm gplus-ic">
+
+<iclass="fa fa-google-plus"></i>
+
+</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="icons-sm tw-ic">
+
+<iclass="fa fa-twitter"></i>
+
+</a>
+
+</li>
+
+</ul>
+
+</li>
+
+<!--/Social-->
+
+<!--Search Form-->
+
+<li>
+
+<formclass="search-form"role="search">
+
+<divclass="form-group md-form mt-0 pt-1 waves-light">
+
+<inputtype="text"class="form-control"placeholder="Search">
+
+</div>
+
+</form>
+
+</li>
+
+<!--/.Search Form-->
+
+<!-- Side navigation links -->
+
+<li>
+
+<ulclass="collapsible collapsible-accordion">
+
+<li>
+
+<aclass="collapsible-header waves-effect arrow-r">
+
+<iclass="fa fa-chevron-right"></i> Submit blog
+
+<iclass="fa fa-angle-down rotate-icon"></i>
+
+</a>
+
+<divclass="collapsible-body">
+
+<ul>
+
+<li>
+
+<ahref="#"class="waves-effect">Submit listing</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">Registration form</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</li>
+
+<li>
+
+<aclass="collapsible-header waves-effect arrow-r">
+
+<iclass="fa fa-hand-pointer-o"></i> Instruction
+
+<iclass="fa fa-angle-down rotate-icon"></i>
+
+</a>
+
+<divclass="collapsible-body">
+
+<ul>
+
+<li>
+
+<ahref="#"class="waves-effect">For bloggers</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">For authors</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</li>
+
+<li>
+
+<aclass="collapsible-header waves-effect arrow-r">
+
+<iclass="fa fa-eye"></i> About
+
+<iclass="fa fa-angle-down rotate-icon"></i>
+
+</a>
+
+<divclass="collapsible-body">
+
+<ul>
+
+<li>
+
+<ahref="#"class="waves-effect">Introduction</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">Monthly meetings</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</li>
+
+<li>
+
+<aclass="collapsible-header waves-effect arrow-r">
+
+<iclass="fa fa-envelope-o"></i> Contact me
+
+<iclass="fa fa-angle-down rotate-icon"></i>
+
+</a>
+
+<divclass="collapsible-body">
+
+<ul>
+
+<li>
+
+<ahref="#"class="waves-effect">FAQ</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">Write a message</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">FAQ</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">Write a message</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">FAQ</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">Write a message</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">FAQ</a>
+
+</li>
+
+<li>
+
+<ahref="#"class="waves-effect">Write a message</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</li>
+
+ 
+
+ 
+
+</ul>
+
+</li>
+
+<!--/. Side navigation links -->
+
+</ul>
+
+</div>
+
+<!--/. Sidebar navigation -->
+
+ 
+
+<main>
+
+ 
+
+<divclass="view overlay">
+
+<imgsrc="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg"class="img-fluid "alt="">
+
+<divclass="mask flex-center rgba-red-strong">
+
+<pclass="white-text">Strong overlay</p>
+
+</div>
+
+</div>
+
+ 
+
+ 
+
+<divclass="container">
+
+<!--Section: Team v.4-->
+
+<sectionclass="pb-5">
+
+ 
+
+<!--Section heading-->
+
+<h2class="text-center h1 py-5">Our amazing team</h2>
+
+<!--Section description-->
+
+<pclass="grey-text pb-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
+
+veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
+
+ 
+
+<divclass="row">
+
+ 
+
+<!--Grid column-->
+
+<divclass="col-lg-4 col-md-12 mb-4">
+
+ 
+
+<!--Rotating card-->
+
+<divclass="card-wrapper">
+
+<divid="card-1"class="card-rotating effect__click text-center w-100 h-100">
+
+ 
+
+<!--Front Side-->
+
+<divclass="face front">
+
+ 
+
+<!-- Image-->
+
+<divclass="card-up">
+
+<imgsrc="https://mdbootstrap.com/img/Photos/Others/images/19.jpg"alt="Team member card image">
+
+</div>
+
+ 
+
+<!--Avatar-->
+
+<divclass="avatar mx-auto white">
+
+<imgsrc="https://mdbootstrap.com/img/Photos/Avatars/img (10).jpg"class="rounded-circle img-fluid"alt="First sample avatar image">
+
+</div>
+
+ 
+
+<!--Content-->
+
+<divclass="card-body">
+
+<h4class="mt-1">Maria Kate</h4>
+
+<pclass="font-weight-bold dark-grey-text">Photographer</p>
+
+<!--Triggering button-->
+
+<aclass="rotate-btn grey-text"data-card="card-1">
+
+<iclass="fa fa-repeat grey-text"></i> Click here to rotate</a>
+
+</div>
+
+ 
+
+</div>
+
+<!--Front Side-->
+
+ 
+
+<!--Back Side-->
+
+<divclass="face back">
+
+ 
+
+<!--Content-->
+
+<divclass="card-body">
+
+ 
+
+<!--Content-->
+
+<h4class="font-weight-bold mt-4 mb-2">
+
+<strong>About me</strong>
+
+</h4>
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis
+
+rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum
+
+eum, officia laudantium quaerat?
+
+</p>
+
+<hr>
+
+<!--Social Icons-->
+
+<ulclass="list-inline list-unstyled">
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm fb-ic">
+
+<iclass="fa fa-facebook"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm pin-ic">
+
+<iclass="fa fa-pinterest"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm ins-ic">
+
+<iclass="fa fa-instagram"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm tw-ic">
+
+<iclass="fa fa-twitter"></i>
+
+</a>
+
+</li>
+
+</ul>
+
+<!--Triggering button-->
+
+<aclass="rotate-btn grey-text"data-card="card-1">
+
+<iclass="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+
+ 
+
+</div>
+
+ 
+
+</div>
+
+<!--Back Side-->
+
+ 
+
+</div>
+
+</div>
+
+<!--Rotating card-->
+
+ 
+
+</div>
+
+<!--Grid column-->
+
+ 
+
+<!--Grid column-->
+
+<divclass="col-lg-4 col-md-12 mb-4">
+
+ 
+
+<!--Rotating card-->
+
+<divclass="card-wrapper">
+
+<divid="card-2"class="card-rotating effect__click text-center w-100 h-100">
+
+ 
+
+<!--Front Side-->
+
+<divclass="face front">
+
+ 
+
+<!-- Image-->
+
+<divclass="card-up">
+
+<imgsrc="https://mdbootstrap.com/img/Photos/Others/images/82.jpg."alt="Team member card image">
+
+</div>
+
+ 
+
+<!--Avatar-->
+
+<divclass="avatar mx-auto white">
+
+<imgsrc="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg"class="rounded-circle img-fluid"alt="Second sample avatar image">
+
+</div>
+
+ 
+
+<!--Content-->
+
+<divclass="card-body">
+
+<h4class="mt-1">Anna Deynah</h4>
+
+<pclass="font-weight-bold dark-grey-text">Web Designer</p>
+
+<!--Triggering button-->
+
+<aclass="rotate-btn grey-text"data-card="card-2">
+
+<iclass="fa fa-repeat grey-text"></i> Click here to rotate</a>
+
+</div>
+
+ 
+
+</div>
+
+<!--Front Side-->
+
+ 
+
+<!--Back Side-->
+
+<divclass="face back">
+
+ 
+
+<!--Content-->
+
+<divclass="card-body">
+
+ 
+
+<!--Content-->
+
+<h4class="font-weight-bold mt-4 mb-2">
+
+<strong>About me</strong>
+
+</h4>
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis
+
+rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum
+
+eum, officia laudantium quaerat?
+
+</p>
+
+<hr>
+
+<!--Social Icons-->
+
+<ulclass="list-inline list-unstyled">
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm fb-ic">
+
+<iclass="fa fa-facebook"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm pin-ic">
+
+<iclass="fa fa-pinterest"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm ins-ic">
+
+<iclass="fa fa-instagram"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm tw-ic">
+
+<iclass="fa fa-twitter"></i>
+
+</a>
+
+</li>
+
+</ul>
+
+<!--Triggering button-->
+
+<aclass="rotate-btn grey-text"data-card="card-2">
+
+<iclass="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+
+ 
+
+</div>
+
+ 
+
+</div>
+
+<!--Back Side-->
+
+ 
+
+</div>
+
+</div>
+
+<!--Rotating card-->
+
+ 
+
+</div>
+
+<!--Grid column-->
+
+ 
+
+<!--Grid column-->
+
+<divclass="col-lg-4 col-md-12 mb-4">
+
+ 
+
+<!--Rotating card-->
+
+<divclass="card-wrapper">
+
+<divid="card-3"class="card-rotating effect__click text-center w-100 h-100">
+
+ 
+
+<!--Front Side-->
+
+<divclass="face front">
+
+ 
+
+<!-- Image-->
+
+<divclass="card-up">
+
+<imgsrc="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(14).jpg"alt="Team member card image">
+
+</div>
+
+ 
+
+<!--Avatar-->
+
+<divclass="avatar mx-auto white">
+
+<imgsrc="https://mdbootstrap.com/img/Photos/Avatars/img (8).jpg"class="rounded-circle img-fluid"alt="Third sample avatar image">
+
+</div>
+
+ 
+
+<!--Content-->
+
+<divclass="card-body">
+
+<h4class="mt-1">John Doe</h4>
+
+<pclass="font-weight-bold dark-grey-text">Front-end Developer</p>
+
+<!--Triggering button-->
+
+<aclass="rotate-btn grey-text"data-card="card-3">
+
+<iclass="fa fa-repeat grey-text"></i> Click here to rotate</a>
+
+</div>
+
+ 
+
+</div>
+
+<!--Front Side-->
+
+ 
+
+<!--Back Side-->
+
+<divclass="face back">
+
+ 
+
+<!--Content-->
+
+<divclass="card-body">
+
+ 
+
+<!--Content-->
+
+<h4class="font-weight-bold mt-4 mb-2">
+
+<strong>About me</strong>
+
+</h4>
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis
+
+rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum
+
+eum, officia laudantium quaerat?
+
+</p>
+
+<hr>
+
+<!--Social Icons-->
+
+<ulclass="list-inline list-unstyled">
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm fb-ic">
+
+<iclass="fa fa-facebook"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm pin-ic">
+
+<iclass="fa fa-pinterest"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm ins-ic">
+
+<iclass="fa fa-instagram"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="icons-sm tw-ic">
+
+<iclass="fa fa-twitter"></i>
+
+</a>
+
+</li>
+
+</ul>
+
+<!--Triggering button-->
+
+<aclass="rotate-btn grey-text"data-card="card-3">
+
+<iclass="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+
+ 
+
+</div>
+
+ 
+
+</div>
+
+<!--Back Side-->
+
+ 
+
+</div>
+
+</div>
+
+<!--Rotating card-->
+
+ 
+
+</div>
+
+<!--Grid column-->
+
+ 
+
+</div>
+
+ 
+
+</section>
+
+<!--Section: Team v.4-->
+
+</div>
+
+<div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg); height: 20vh;">
+
+<divclass="full-bg-img">
+
+<divclass="mask rgba-white-light">
+
+<divclass="container flex-center text-center">
+
+<divclass="row mt-5">
+
+<divclass="col-md-12 wow fadeIn mb-3">
+
+<h1class="display-1 mb-2 wow fadeInDown"data-wow-delay="0.3s">NATALIE
+
+<aclass="indigo-text font-weight-bold">SMITH</a>
+
+</h1>
+
+<h5class="text-uppercase mb-3 mt-1 font-weight-bold wow fadeIn"data-wow-delay="0.4s">Web developer & graphic designer</h5>
+
+<aclass="btn btn-light-blue btn-lg wow fadeIn"data-wow-delay="0.4s">portfolio</a>
+
+<aclass="btn btn-indigo btn-lg wow fadeIn"data-wow-delay="0.4s">About me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<div id="stop"></div>
+
+ 
+
+<!--Footer-->
+
+<footer class="page-footer font-small stylish-color-dark pt-4 ">
+
+<!--Footer Links-->
+
+<divclass="container text-center text-md-left">
+
+<!-- Footer links -->
+
+<divclass="row text-center text-md-left mt-3 pb-3">
+
+<!--First column-->
+
+<divclass="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+
+<h6class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+
+<p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+
+adipisicing elit.</p>
+
+</div>
+
+<!--/.First column-->
+
+<hrclass="w-100 clearfix d-md-none">
+
+<!--Second column-->
+
+<divclass="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+<h6class="text-uppercase mb-4 font-weight-bold">Products</h6>
+
+<p>
+
+<ahref="#!">MDBootstrap</a>
+
+</p>
+
+<p>
+
+<ahref="#!">MDWordPress</a>
+
+</p>
+
+<p>
+
+<ahref="#!">BrandFlow</a>
+
+</p>
+
+<p>
+
+<ahref="#!">Bootstrap Angular</a>
+
+</p>
+
+</div>
+
+<!--/.Second column-->
+
+<hrclass="w-100 clearfix d-md-none">
+
+<!--Third column-->
+
+<divclass="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+
+<h6class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+
+<p>
+
+<ahref="#!">Your Account</a>
+
+</p>
+
+<p>
+
+<ahref="#!">Become an Affiliate</a>
+
+</p>
+
+<p>
+
+<ahref="#!">Shipping Rates</a>
+
+</p>
+
+<p>
+
+<ahref="#!">Help</a>
+
+</p>
+
+</div>
+
+<!--/.Third column-->
+
+<hrclass="w-100 clearfix d-md-none">
+
+<!--Fourth column-->
+
+<divclass="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+
+<h6class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+
+<p>
+
+<iclass="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+
+<p>
+
+<iclass="fa fa-envelope mr-3"></i> info@gmail.com</p>
+
+<p>
+
+<iclass="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+
+<p>
+
+<iclass="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+</div>
+
+<!--/.Fourth column-->
+
+</div>
+
+<!-- Footer links -->
+
+<hr>
+
+<divclass="row py-3 d-flex align-items-center">
+
+<!--Grid column-->
+
+<divclass="col-md-8 col-lg-8">
+
+<!--Copyright-->
+
+<pclass="text-center text-md-left grey-text">© 2017 Copyright:
+
+<ahref="https://mdbootstrap.com/material-design-for-bootstrap/">
+
+<strong> MDBootstrap.com</strong>
+
+</a>
+
+</p>
+
+<!--/.Copyright-->
+
+</div>
+
+<!--Grid column-->
+
+<!--Grid column-->
+
+<divclass="col-md-4 col-lg-4 ml-lg-0">
+
+<!--Social buttons-->
+
+<divclass="text-center text-md-right">
+
+<ulclass="list-unstyled list-inline">
+
+<liclass="list-inline-item">
+
+<aclass="btn-floating btn-sm rgba-white-slight mx-1">
+
+<iclass="fa fa-facebook"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="btn-floating btn-sm rgba-white-slight mx-1">
+
+<iclass="fa fa-twitter"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="btn-floating btn-sm rgba-white-slight mx-1">
+
+<iclass="fa fa-google-plus"></i>
+
+</a>
+
+</li>
+
+<liclass="list-inline-item">
+
+<aclass="btn-floating btn-sm rgba-white-slight mx-1">
+
+<iclass="fa fa-linkedin"></i>
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!--/.Social buttons-->
+
+</div>
+
+<!--Grid column-->
+
+</div>
+
+</div>
+
+</footer>
+
+<!--/.Footer-->
+
+ 
+
+<!-- JQuery -->
+
+<scripttype="text/javascript"src="js/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+
+<scripttype="text/javascript"src="js/popper.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+
+<scripttype="text/javascript"src="js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+
+<scripttype="text/javascript"src="js/mdb.js"></script>
+
+<script>// SideNav Button Initialization
+
+$(".button-collapse").sideNav();
+
+// SideNav Scrollbar Initialization
+
+varsideNavScrollbar = document.querySelector('.custom-scrollbar');
+
+Ps.initialize(sideNavScrollbar);</script>
+
+</body>
+
+</html>
